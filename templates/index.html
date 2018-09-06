@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Smart Garbage Can</title>
+		<link rel="stylesheet" type="text/css" href="static/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.1/socket.io.js"></script>
+	</head>
+	<body onload="updateData()">
+		<header>
+			<h1>Smart Garbage Can Monitor</h1>
+		</header>
+		<div class="flex-container">
+			<div class="container">
+				<img src="static/trash-can-icon.png" alt="Avatar" id="image">
+				<div class="overlay" id="progress">
+					<div class="text"></div>
+				</div>
+			</div>
+			<div class="container", id="stats">
+				<span id="stats-header">Trash Take-Out Stats</span>
+				<div id="data">
+					<div id="total", class="stat"></div>
+					<div id="after-full", class="stat"></div>
+					<div id="before-full", class="stat"></div>
+					<div id="highest-month", class="stat"></div>
+				</div>
+				<button onclick="requestNewData()" id="update-stats">Update</button>
+			</div>
+		</div>
+		<div id="temp"></div>
+		<div id="time"></div>
+		<script src="static/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,179 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: green;
+	text-align: center;
+	font-family: 'Bowlby One SC', cursive;
+	font-size: 3em;
+}
+
+header {
+	background-color: #ced4dd;
+	padding: 15px;
+	margin-bottom: 15px;
+}
+
+input[type=number] {
+	border: 2px solid green;
+	border-radius: 4px;
+	width: 5%;
+	margin: 8px 0;
+	padding: 12px 20px;
+	font-size: 100%;
+}
+
+input[type=number]:focus {
+	outline: none;
+	border: 3px solid green;
+}
+
+input[type=number]:hover {
+	border: 3px solid green;
+}
+
+input[type=submit] {
+	background-color: transparent;
+	border: 2px solid green;
+	border-radius: 5px;
+	color: green;
+	padding: 8px 8px;
+  	text-align: center;
+  	font-size: 16px;
+  	cursor: pointer;
+  	outline: none;
+}
+
+input[type=submit]:hover {
+	background-color: green;
+	color: white;
+}
+
+.height {
+	margin: 20px;
+	height: 30px;
+}
+
+
+.container {
+	position: relative;
+	width: 50%;
+}
+
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 15px;
+	left: 67px;
+	right: 0;
+	background-color: rgba(140, 244, 66, 0.65);
+	overflow: hidden;
+	width: 379px;
+	height: 0;
+	border-radius: 22px;
+	transition: .5s ease;
+}
+
+.text {
+	color: black;
+	font-size: 50px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+#icon {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#stats {
+	border: 4px solid green;
+	height: 100;
+	border-radius: 20px;
+	text-align: center;
+}
+
+#temp {
+	margin: 25px;
+	position: relative;
+	bottom: 590px;
+	color: green;
+	font-size: 2em;
+	font-weight: bold;
+	height: 30px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+#time {
+	font-family: 'Ubuntu', sans-serif;
+	margin-left: 6%;
+	color: green;
+	font-size: 1.25em;
+	height: 20px;
+	position: relative;
+	bottom: 70px;
+}
+
+#data {
+	position: relative;
+	font-size: 1.5em;
+	margin: 10px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.stat {
+	margin-bottom: 20px;
+}
+
+#stats-header {
+	font-family: 'Bowlby One SC', cursive;
+	color: green;
+    display: inline-block;
+	font-size: 2em;
+	margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#update-stats {
+	background-color: transparent;
+	border: 2px solid green;
+	border-radius: 5px;
+	color: green;
+	padding: 8px 8px;
+  	text-align: center;
+  	font-size: 16px;
+  	cursor: pointer;
+  	outline: none;
+	margin: 0 auto;
+	position: relative;
+	top: 150px;
+}
+
+#update-stats:hover {
+	background-color: green;
+	color: white;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.flex-container > div {
+	width: 50%;
+	margin: 20px;
+}

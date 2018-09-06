@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Smart Garbage Setup</title>
+		<link rel="stylesheet" type="text/css" href="static/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<h1>Smart Garbage Can Monitor Setup</h1>
+		</header>
+		<form action="/monitor" method="POST" class="height">
+			Enter the Height of the Trash Can:</br>
+			<input name="height" min="1" type="number" placeholder="Feet"></input>
+			<input type="submit" value="Send"></input>
+		</form>
+		<img src="static/recycling-can.png" alt="Avatar" id="icon">
+	</body>
+</html>
